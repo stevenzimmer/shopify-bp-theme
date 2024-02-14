@@ -1,0 +1,169 @@
+<section class="reviews-sec">
+  <div class="page-width reviews-con">
+    <h3 class="center">{{ section.settings.heading }}</h3>
+    <div class="main-reviews" data-oke-carousel></div>
+    <div class="center">
+      {%- if section.settings.button_label != blank -%}
+        <a class="button button--primary"{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
+          {{ section.settings.button_label | escape }}
+        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.7071 8.20711C19.0976 7.81658 19.0976 7.18342 18.7071 6.79289L12.3431 0.428932C11.9526 0.0384078 11.3195 0.0384078 10.9289 0.428932C10.5384 0.819457 10.5384 1.45262 10.9289 1.84315L16.5858 7.5L10.9289 13.1569C10.5384 13.5474 10.5384 14.1805 10.9289 14.5711C11.3195 14.9616 11.9526 14.9616 12.3431 14.5711L18.7071 8.20711ZM0 8.5H18V6.5H0V8.5Z" fill="white"/>
+        </svg>
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+<style>
+  #shopify-section-{{ section.id }} .button{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #FFFFFF;
+    background-color: #ff8a00;
+    padding: 16px 28px;
+    height: 57px;
+    transition: 0.5s;
+    margin-top: 0;
+  }
+  #shopify-section-{{ section.id }} .button:hover{
+    padding: 16px 32px;
+    height: 57px;
+    background-color: #FF6B00;
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.2);
+  }
+  #shopify-section-{{ section.id }} .button:before,
+  #shopify-section-{{ section.id }} .button:after{
+   display: none; 
+  }
+  #shopify-section-{{ section.id }} .button svg{
+    margin-left: 6px
+  }
+  #shopify-section-{{ section.id }} .reviews-con h3{
+    font-family: 'Playfair Display';
+    font-weight: 800;
+    font-size: 41px;
+    line-height: 1.3em;
+    color: #252525;
+    margin: 0;
+  }
+  #shopify-section-{{ section.id }} .reviews-sec{
+    padding: 70px 0;
+  }
+  #shopify-section-{{ section.id }} .oke-w-review-footer,
+  #shopify-section-{{ section.id }}  .oke-reviewCarousel-header,
+  #shopify-section-{{ section.id }} .oke-reviewContent-date{
+    display: none;
+  }
+  #shopify-section-{{ section.id }} .oke-prevNextButton-icon{
+    border: 1px solid #9C9C9C;
+    width: 55px !important;
+    height: 55px!important;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #shopify-section-{{ section.id }} .oke-reviewContent-body{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #333333;
+  }
+  #shopify-section-{{ section.id }} .oke-prevNextButton--prev{
+    left: -60px;
+  }
+  #shopify-section-{{ section.id }} .oke-prevNextButton--next{
+    right: -60px;
+  }
+  #shopify-section-{{ section.id }} .oke-prevNextButton--prev div:before{
+   content: url(https://cdn.shopify.com/s/files/1/0667/4248/5269/files/prev.svg?v=1679913595);
+   margin-top: -5px;
+  }
+  #shopify-section-{{ section.id }} .oke-prevNextButton--next div:before{
+   content: url(https://cdn.shopify.com/s/files/1/0667/4248/5269/files/next.svg?v=1679913595);
+   margin-top: -5px;
+  }
+ #shopify-section-{{ section.id }}  .oke-reviewCard{
+   background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    border: 0;
+   padding: 30px;
+ }
+  #shopify-section-{{ section.id }} .oke-reviewCarousel-reviews-review{
+    padding: 10px;
+  }
+  #shopify-section-{{ section.id }} .oke-w-reviewer-name{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+  }
+  #shopify-section-{{ section.id }} .oke-reviewContent-top{
+    display: inline-block;
+    margin-right: 15px;
+  }
+  #shopify-section-{{ section.id }} .oke-reviewContent-title{
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 18px;
+    color: #333333;
+    display: inline-block;
+    width: auto;
+   overflow: inherit;
+  }
+  #shopify-section-{{ section.id }} .oke-reviewCarousel-reviews{
+    width: 100%;
+  }
+  #shopify-section-{{ section.id }} .main-reviews{
+    margin: 40px 0px;
+  }
+  @media (max-width: 1024px){
+    #shopify-section-{{ section.id }} .oke-prevNextButton{
+      display: none;
+    }
+  }
+  @media (max-width: 767px){
+    #shopify-section-{{ section.id }} .reviews-con h3{
+       font-size: 30px;
+    }
+  }
+</style>
+
+
+
+
+{% schema %}
+{
+  "name": "Home Reviews",
+  "class": "section",
+  "settings": [
+     {
+      "type": "text",
+      "id": "heading",
+      "label": "Add Section Title Here"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Reviews"
+    }
+  ]
+}
+  {% endschema %}
