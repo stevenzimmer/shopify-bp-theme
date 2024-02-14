@@ -1,0 +1,54 @@
+
+<section class="bg-bp-grey-2 pb-20 pt-10">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="mb-6 text-center text-4xl font-semibold">
+      {{section.settings.title}}
+    </h2>
+    <div class="overflow-hidden px-12">
+      <div class="flex product-swiper relative  flex-wrap items-stretch h-full">
+        <div class="absolute left-0 top-0 bottom-0 h-full w-12 z-10 flex items-center justift-center  transition-opacity duration-200 opacity-0 -translate-x-2 md:-translate-x-12 bg-bp-grey-2 " id="carousel-prev">
+          <div class="absolute -left-2 md:-left-3 z-10 top-1/4">
+            <svg class="btn-prev rotate-180 cursor-pointer" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.9999 12L29.9999 24L17.9999 36" stroke="#BAC0B8" stroke-width="3.2" stroke-linecap="square" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="absolute right-0 top-0 bottom-0 h-full w-12 z-10 flex items-center justift-center transition-opacity duration-200 translate-x-2 md:translate-x-12 bg-bp-grey-2 " id="carousel-next">
+          <div class="absolute -right-2 md:-right-3 z-10 top-1/4">
+            <svg class="btn-next cursor-pointer" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.9999 12L29.9999 24L17.9999 36" stroke="#BAC0B8" stroke-width="3.2" stroke-linecap="square" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          {% for product in section.settings.featured_collection.products %}
+            <div class="swiper-slide">
+
+            {% render "product-card" | product: product %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="" class="btn border-bp-orange bg-bp-orange">View All Products</a>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Featured Collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "collection",
+      "id": "featured_collection",
+      "label": "Collection"
+    }
+  ]
+}
+{% endschema %}

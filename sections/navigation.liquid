@@ -1,0 +1,73 @@
+{% assign main_menu_linklist = linklists[section.settings['main-nav']].links %}
+<nav class="relative bg-bp-grey-2 py-6">
+  <div class="container">
+    <div class="flex items-center justify-between">
+      <div>
+        <a class="block" href="{{ routes.root_url }}">
+          {% render 'logo-boostpatches' %}
+        </a>
+      </div>
+      <div class="absolute  left-0 top-20 hidden w-full flex-col justify-between bg-bp-grey-2 px-6 py-12 lg:relative  lg:top-0 lg:flex lg:flex-row lg:items-center lg:p-0">
+        <div class="mb-6 flex w-full flex-col lg:mb-0 lg:flex-row lg:items-center lg:justify-center">
+          {% for link in main_menu_linklist %}
+            <a
+              class="mb-3 block font-semibold text-bp-teal-dark lg:mx-4 lg:mb-0 xl:mx-6"
+              href="{{ link.url }}"
+            >
+              {{- link.title -}}
+            </a>
+          {% endfor %}
+        </div>
+        <div class="">
+          {% if shop.customer_accounts_enabled %}
+            <a href="{{ section.settings.btn_url }}" class=" btn border-bp-orange ">
+              {{- section.settings.btn_text }}
+              <svg
+                class="inline"
+                width="22"
+                height="23"
+                viewBox="0 0 22 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M15.5827 6.70837L6.41602 16.2917M15.5827 6.70837H7.33268M15.5827 6.70837V15.3334" stroke="#2E2A39" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="lg:hidden">
+        {% render 'icon-hamburger' %}
+      </div>
+    </div>
+  </div>
+</nav>
+
+{% schema %}
+{
+  "name": "Navigation",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "main-nav",
+      "label": "Main menu",
+      "default": "main-menu",
+      "info": "Add the links for the main menu"
+    },
+    {
+      "type": "text",
+      "id": "btn_url",
+      "label": "Button Link",
+      "default": "/account/register",
+      "info": "Add the Link for the button"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text",
+      "default": "Subscribe & Save",
+      "info": "Customize Call to action text"
+    }
+  ]
+}
+{% endschema %}

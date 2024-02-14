@@ -1,0 +1,26 @@
+<div class="relative group">
+  <div class="relative rounded-lg bg-white p-6 group-hover:shadow transition-all duration-200 group-hover:-translate-y-0.5">
+    {% if product.featured_image %}
+
+      <img class="group-hover:opacity-80 transition-opacity duration-200" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}" src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
+
+
+    {% else %}
+        {{ "product-1" |  placeholder_svg_tag: "w-full h-full object-cover" }}
+    {% endif %}
+    
+    <a href="{{ product.url | within: collection }}" class="absolute inset-0 flex h-full w-full items-center justify-center opacity-0 group-hover:opacity-100">
+      <span
+        class="btn btn-sm border-bp-teal-dark bg-bp-teal-dark text-white"
+        >View Options</span
+      >
+    </a>
+  </div>
+  <div class="p-3">
+    <h3 class="mb-3 text-xl font-semibold" >
+      {{ product.title }}
+    </h3>
+    <p>{{ product.description | strip_html }}</p>
+
+  </div>
+</div>

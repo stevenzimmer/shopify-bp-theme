@@ -1,0 +1,68 @@
+<section class="bg-bp-blue-light">
+  <div class="container py-16 relative">
+    {% if section.settings.background_image %}
+      <div class="absolute w-full h-full flex justify-end inset-0">
+        <div>
+          {% render "product-media" media: section.settings.background_image %}
+        </div>
+      </div>
+    {% endif %}
+    <div class="lg:w-1/2">
+      {% if section.settings.label %}
+        <p class="text-sm text-bp-teal-dark mb-3 font-bold uppercase">
+          {{ section.settings.label }}
+        </p>
+      {% endif %}
+      <h1 class="text-bp-teal-dark">{{  section.settings.h1 }}</h1>
+      <p class="text-lg my-3 font-bold text-bp-blue-dark">{{ section.settings.subtext }}</p>
+      {% if section.settings.paragraph %}  
+        <p class="mb-6">
+          {{  section.settings.paragraph }}
+        </p>
+      {% endif %}
+
+      <a href="{{ routes.all_products_collection_url }}" class="btn border-bp-orange bg-bp-orange">{{ section.settings.button_text }}</a>
+    </div>
+
+  </div>
+  <div class="bg-bp-grey-2 py-6"></div>
+</section>
+
+{% schema %}
+{
+  "name": "Page Hero",
+  "settings": [
+      {
+        "type": "text",
+          "id": "label",
+          "label": "Label"
+      },
+      {
+          "type": "text",
+          "id": "h1",
+          "label": "H1 Text"
+      },
+      {
+          "type": "text",
+          "id": "subtext",
+          "label": "Subtext"
+      },
+      {
+          "type": "text",
+          "id": "paragraph",
+          "label": "Paragraph Text"
+      },
+      {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+
+      }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,22 @@
+@tailwind base;
+@layer base {
+  html,
+  body {
+    @apply font-manrope text-base font-normal text-bp-body antialiased;
+  }
+
+  h1 {
+    @apply font-fraunces text-3xl text-4xl font-bold text-bp-primary md:text-5xl lg:text-7xl;
+  }
+}
+@tailwind components;
+@layer components {
+  .btn {
+    @apply inline-block whitespace-nowrap rounded-lg border-2 px-6 py-3 text-lg font-bold text-bp-primary;
+
+    &-sm {
+      @apply px-4 py-2 text-base;
+    }
+  }
+}
+@tailwind utilities;
