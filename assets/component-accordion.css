@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   line-height: 1;
-  padding: 1.5rem 0;
+  padding: .5rem 0;
 }
 
 .accordion .summary__title {
@@ -39,7 +39,7 @@
   fill: rgb(var(--color-foreground));
   height: calc(var(--font-heading-scale) * 2rem);
   margin-right: calc(var(--font-heading-scale) * 1rem);
-  width: calc(var(--font-heading-scale) * 2rem);
+  /* width: calc(var(--font-heading-scale) ); */
 }
 
 .accordion details[open] > summary .icon-caret {

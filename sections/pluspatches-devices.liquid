@@ -1,5 +1,10 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
-<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<link
+  rel="stylesheet"
+  href="{{ 'component-slider.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+>
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
@@ -29,18 +34,19 @@
         <h2 class="title {{ section.settings.heading_size }}">
           {{ section.settings.title | escape }}
           {%- unless section.settings.high_title == blank -%}
-          <span class="highlited-title"> {{ section.settings.high_title | escape }}</span>
+            <span class="highlited-title"> {{ section.settings.high_title | escape }}</span>
           {%- endunless -%}
         </h2>
         {%- unless section.settings.description == blank -%}
-        <div class="description">
-          <span>{{ section.settings.description }}</span>
-        </div>
-       {%- endunless -%}
+          <div class="description">
+            <span>{{ section.settings.description }}</span>
+          </div>
+        {%- endunless -%}
       </div>
     {%- endunless -%}
     <slider-component class="slider-mobile-gutter">
-      <ul class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}"
+      <ul
+        class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
       >
@@ -54,41 +60,65 @@
         -%}
         {%- for block in section.blocks -%}
           {%- assign empty_column = '' -%}
-          {%- if block.settings.image == blank and block.settings.title == blank and block.settings.text == blank and block.settings.link_label == blank -%}
+          {%- if block.settings.image == blank
+            and block.settings.title == blank
+            and block.settings.text == blank
+            and block.settings.link_label == blank
+          -%}
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
 
-          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}>
+          <li
+            id="Slide-{{ section.id }}-{{ forloop.index }}"
+            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}"
+            {{ block.shopify_attributes }}
+          >
             <div class="multicolumn-card content-container">
               {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
+                {% if section.settings.image_ratio == 'adapt'
+                  or section.settings.image_ratio == 'circle'
+                %}
                   {% assign spaced_image = true %}
                 {% endif %}
                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width">
-                  <div class="media media--transparent media--{{ section.settings.image_ratio }}"
+                  <div
+                    class="media media--transparent media--{{ section.settings.image_ratio }}"
                     {% if section.settings.image_ratio == 'adapt' %}
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}>
+                    {% endif %}
+                  >
                     {%- capture sizes -%}(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %}, (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %}, calc(100vw - 30px){%- endcapture -%}
-                    {{ block.settings.image | image_url: width: 1420 | image_tag:
-                      loading: 'lazy',
-                      sizes: sizes,
-                      widths: '275, 550, 710, 1420',
-                      class: 'multicolumn-card__image'
+                    {{
+                      block.settings.image
+                      | image_url: width: 1420
+                      | image_tag:
+                        loading: 'lazy',
+                        sizes: sizes,
+                        widths: '275, 550, 710, 1420',
+                        class: 'multicolumn-card__image'
                     }}
                   </div>
                   {%- if block.settings.title != blank -%}
-                  <h3>{{ block.settings.title | escape }}</h3>
-                {%- endif -%}
+                    <h3>{{ block.settings.title | escape }}</h3>
+                  {%- endif -%}
                 </div>
               {%- endif -%}
               <div class="multicolumn-card__info">
-               
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
-                  <a class="link animate-arrow" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+                  <a
+                    class="link animate-arrow"
+                    {% if block.settings.link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.link }}"
+                    {% endif %}
+                  >
+                    {{- block.settings.link_label | escape -}}
+                    <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a
+                  >
                 {%- endif -%}
               </div>
             </div>
@@ -98,24 +128,51 @@
 
       {%- if show_mobile_slider -%}
         <div class="slider-buttons no-js-hidden medium-hide">
-          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+          <button
+            type="button"
+            class="slider-button slider-button--prev"
+            name="previous"
+            aria-label="{{ 'general.slider.previous_slide' | t }}"
+          >
+            {% render 'icon-caret' %}
+          </button>
           <div class="slider-counter caption">
             <span class="slider-counter--current">1</span>
             <span aria-hidden="true"> / </span>
             <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
             <span class="slider-counter--total">{{ section.blocks.size }}</span>
           </div>
-          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
+          <button
+            type="button"
+            class="slider-button slider-button--next"
+            name="next"
+            aria-label="{{ 'general.slider.next_slide' | t }}"
+          >
+            {% render 'icon-caret' %}
+          </button>
         </div>
       {%- endif -%}
     </slider-component>
     <div class="center{% if show_mobile_slider %} large-up-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
-        <a class="button button--primary"{% if section.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
+        <a
+          class="button button--primary"
+          {% if section.settings.button_link == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings.button_link }}"
+          {% endif %}
+        >
           {{ section.settings.button_label | escape }}
-        <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.7071 8.20711C19.0976 7.81658 19.0976 7.18342 18.7071 6.79289L12.3431 0.428932C11.9526 0.0384078 11.3195 0.0384078 10.9289 0.428932C10.5384 0.819457 10.5384 1.45262 10.9289 1.84315L16.5858 7.5L10.9289 13.1569C10.5384 13.5474 10.5384 14.1805 10.9289 14.5711C11.3195 14.9616 11.9526 14.9616 12.3431 14.5711L18.7071 8.20711ZM0 8.5H18V6.5H0V8.5Z" fill="white"/>
-</svg>
+          <svg
+            width="19"
+            height="15"
+            viewBox="0 0 19 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M18.7071 8.20711C19.0976 7.81658 19.0976 7.18342 18.7071 6.79289L12.3431 0.428932C11.9526 0.0384078 11.3195 0.0384078 10.9289 0.428932C10.5384 0.819457 10.5384 1.45262 10.9289 1.84315L16.5858 7.5L10.9289 13.1569C10.5384 13.5474 10.5384 14.1805 10.9289 14.5711C11.3195 14.9616 11.9526 14.9616 12.3431 14.5711L18.7071 8.20711ZM0 8.5H18V6.5H0V8.5Z" fill="white"/>
+          </svg>
         </a>
       {%- endif -%}
     </div>
@@ -127,7 +184,6 @@
     background-color:#fff;
   }
    #shopify-section-{{ section.id }} .title-wrapper-with-link h2{
-    font-family: 'Gill';
     font-weight: 500;
     font-size: 41px;
     line-height: 1.3em;
@@ -143,11 +199,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    font-family: 'Assistant';
   }
   #shopify-section-{{ section.id }} .media{
     padding-bottom: 0 !important
-  } 
+  }
   #shopify-section-{{ section.id }} .media img{
     position: static;
     width: 150px;
@@ -162,7 +217,6 @@
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    font-family: 'Assistant';
   }
   #shopify-section-{{ section.id }} .multicolumn-card{
     background: none;
@@ -176,7 +230,7 @@
     flex-direction: column;
     gap: 14px;
   }
-   
+
 
     #shopify-section-{{ section.id }} .multicolumn-list{
       column-gap: 16px;
@@ -202,8 +256,6 @@
   }
 </style>
 
-
-        
 {% schema %}
 {
   "name": "Every Popular Device",

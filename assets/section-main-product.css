@@ -31,7 +31,7 @@
   }
 
   .product__info-wrapper {
-    padding: 0 0 0 5rem;
+    padding: 0 0 0 3rem;
   }
 
   .product__info-wrapper--extra-padding {
@@ -87,7 +87,6 @@
 /* Dynamic checkout */
 
 .shopify-payment-button__button {
-  font-family: inherit;
   min-height: 4.6rem;
 }
 

@@ -1,1 +1,262 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"padding_top":36,"padding_bottom":28}},"b1c674ae-c4fa-485f-aee3-b92d8e8e582b":{"type":"rich-text","blocks":{"template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-0":{"type":"heading","settings":{"heading":"<p>FAQs<\/p>","heading_size":"h1"}},"template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-1":{"type":"text","settings":{"text":"<p>Can't find the answer to your question below?<br\/>Don't hesitate to reach out to our team for answers!<\/p>"}},"template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-2":{"type":"button","settings":{"button_label":"Contact Us","button_link":"shopify:\/\/pages\/contact","button_style_secondary":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":true}}},"block_order":["template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-0","template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-1","template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-2"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"background-1","full_width":true,"padding_top":40,"padding_bottom":52}},"8724cf0d-d685-46fb-ad15-d4c8de9f2d42":{"type":"collapsible-content","blocks":{"template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-0":{"type":"collapsible_row","settings":{"heading":"How do I apply a topical patch?","icon":"check_mark","row_content":"<p>First, clean and dry the area where the patch will be applied. Then, peel one patch from its liner and apply it to the skin, rubbing the patch down evenly to ensure good contact.<\/p>","page":""}},"template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-1":{"type":"collapsible_row","settings":{"heading":"How long does a topical patch last?","icon":"check_mark","row_content":"<p>The duration of a topical patch's effectiveness will vary depending on the specific medication and the instructions provided.<\/p>","page":""}},"template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-2":{"type":"collapsible_row","settings":{"heading":"Can I shower or swim with a topical patch on?","icon":"check_mark","row_content":"<p>Our patches are not intended to be submerged in water or be in  constant contact with water (like a shower). For best results the user should not use the patches when in constant contact with water.<\/p>","page":""}},"e7cd3bb9-fd04-4794-938d-4c67d0cae6b1":{"type":"collapsible_row","settings":{"heading":"What is your money back guarantee?","icon":"check_mark","row_content":"<p>We guarantee you will love it or your money back. This offer is valid for your first order only. To use this offer, simply <a href=\"\/pages\/contact\" target=\"_blank\" title=\"Contact\">contact us<\/a>.<\/p>","page":""}}},"block_order":["template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-0","template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-1","template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-2","e7cd3bb9-fd04-4794-938d-4c67d0cae6b1"],"settings":{"caption":"","heading":"Product Information","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"background-1","container_color_scheme":"background-2","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"86fc78cf-1d4c-4c41-9275-b20e0c380df4":{"type":"collapsible-content","blocks":{"template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-0":{"type":"collapsible_row","settings":{"heading":"Do you offer free shipping?","icon":"check_mark","row_content":"<p>Yes, we offer free shippign on all orders over $25<\/p>","page":""}},"template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-1":{"type":"collapsible_row","settings":{"heading":"Do you offer expedited shipping","icon":"check_mark","row_content":"<p>Yes, we have both UPS and USPS options available at checkout. <\/p>","page":""}},"template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-2":{"type":"collapsible_row","settings":{"heading":"How long will it take to get my order?","icon":"check_mark","row_content":"<p>Orders are shipped within 1-3 business days. Please add this time to your shipment method to get the total time to recieve your order. <\/p>","page":""}},"template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-3":{"type":"collapsible_row","settings":{"heading":"What if I dont like the patches?","icon":"check_mark","row_content":"<p>We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.<\/p>","page":""}}},"block_order":["template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-0","template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-1","template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-2","template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-3"],"settings":{"caption":"","heading":"Shipping & Returns","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"background-1","container_color_scheme":"background-2","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"c15c81c2-3570-42b4-8a68-5b0b39bb01b5":{"type":"collapsible-content","blocks":{"template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-0":{"type":"collapsible_row","settings":{"heading":"How does the subscription service work?","icon":"check_mark","row_content":"<p>When you purchase Boost Patches you have the option to subscribe to the product and choose delivery every 30,60 or 90 days. Based on your selection we will create a new order every 30,0 or 90 days and ship your patches. You do not need to do anything, it is 100% on autopilot. <\/p>","page":""}},"template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-1":{"type":"collapsible_row","settings":{"heading":"Can I customize my subscription?","icon":"check_mark","row_content":"<p>Yes! You can change the frequency for each patch type either when you first purchase or in the subscrition portal after your first purchase. <\/p>","page":""}},"template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-2":{"type":"collapsible_row","settings":{"heading":"How do I change or cancel my subscription?","icon":"check_mark","row_content":"<p>Easy! Login to our subscriotion portal and hit the cancel button! You can also email us to have it cancelled manually. <\/p>","page":""}},"template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-3":{"type":"collapsible_row","settings":{"heading":"What is your refund or return policy for subscription products?","icon":"check_mark","row_content":"<p>Our refund and return policy is the same for one time & subscription orders.<\/p>","page":""}}},"block_order":["template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-0","template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-1","template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-2","template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-3"],"settings":{"caption":"","heading":"Subscriptions","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"background-1","container_color_scheme":"background-2","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"newsletter":{"type":"newsletter","blocks":{"heading":{"type":"heading","settings":{"heading":"Subscribe for updates","heading_size":"h1"}},"paragraph":{"type":"paragraph","settings":{"text":"<p>Be the first to know about new collections and exclusive offers.<\/p>"}},"email-form":{"type":"email_form","settings":{}}},"block_order":["heading","paragraph","email-form"],"settings":{"color_scheme":"inverse","full_width":true,"padding_top":60,"padding_bottom":0}}},"order":["main","b1c674ae-c4fa-485f-aee3-b92d8e8e582b","8724cf0d-d685-46fb-ad15-d4c8de9f2d42","86fc78cf-1d4c-4c41-9275-b20e0c380df4","c15c81c2-3570-42b4-8a68-5b0b39bb01b5","newsletter"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": { "padding_top": 36, "padding_bottom": 28 }
+    },
+    "b1c674ae-c4fa-485f-aee3-b92d8e8e582b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-0": {
+          "type": "heading",
+          "settings": { "heading": "<p>FAQs</p>", "heading_size": "h1" }
+        },
+        "template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Can't find the answer to your question below?<br/>Don't hesitate to reach out to our team for answers!</p>"
+          }
+        },
+        "template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-0",
+        "template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-1",
+        "template--17545300050197__b1c674ae-c4fa-485f-aee3-b92d8e8e582b-167426323038302416-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "8724cf0d-d685-46fb-ad15-d4c8de9f2d42": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I apply a topical patch?",
+            "icon": "check_mark",
+            "row_content": "<p>First, clean and dry the area where the patch will be applied. Then, peel one patch from its liner and apply it to the skin, rubbing the patch down evenly to ensure good contact.</p>",
+            "page": ""
+          }
+        },
+        "template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does a topical patch last?",
+            "icon": "check_mark",
+            "row_content": "<p>The duration of a topical patch's effectiveness will vary depending on the specific medication and the instructions provided.</p>",
+            "page": ""
+          }
+        },
+        "template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I shower or swim with a topical patch on?",
+            "icon": "check_mark",
+            "row_content": "<p>Our patches are not intended to be submerged in water or be in  constant contact with water (like a shower). For best results the user should not use the patches when in constant contact with water.</p>",
+            "page": ""
+          }
+        },
+        "e7cd3bb9-fd04-4794-938d-4c67d0cae6b1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your money back guarantee?",
+            "icon": "check_mark",
+            "row_content": "<p>We guarantee you will love it or your money back. This offer is valid for your first order only. To use this offer, simply <a href=\"/pages/contact\" target=\"_blank\" title=\"Contact\">contact us</a>.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-0",
+        "template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-1",
+        "template--17545300050197__8724cf0d-d685-46fb-ad15-d4c8de9f2d42-16742631574386377e-2",
+        "e7cd3bb9-fd04-4794-938d-4c67d0cae6b1"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Product Information",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "86fc78cf-1d4c-4c41-9275-b20e0c380df4": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer free shipping?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, we offer free shippign on all orders over $25</p>",
+            "page": ""
+          }
+        },
+        "template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer expedited shipping",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, we have both UPS and USPS options available at checkout. </p>",
+            "page": ""
+          }
+        },
+        "template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long will it take to get my order?",
+            "icon": "check_mark",
+            "row_content": "<p>Orders are shipped within 1-3 business days. Please add this time to your shipment method to get the total time to recieve your order. </p>",
+            "page": ""
+          }
+        },
+        "template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if I dont like the patches?",
+            "icon": "check_mark",
+            "row_content": "<p>We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-0",
+        "template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-1",
+        "template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-2",
+        "template--17545300050197__86fc78cf-1d4c-4c41-9275-b20e0c380df4-16742631574386377e-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Shipping & Returns",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c15c81c2-3570-42b4-8a68-5b0b39bb01b5": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does the subscription service work?",
+            "icon": "check_mark",
+            "row_content": "<p>When you purchase Boost Patches you have the option to subscribe to the product and choose delivery every 30,60 or 90 days. Based on your selection we will create a new order every 30,0 or 90 days and ship your patches. You do not need to do anything, it is 100% on autopilot. </p>",
+            "page": ""
+          }
+        },
+        "template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I customize my subscription?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes! You can change the frequency for each patch type either when you first purchase or in the subscrition portal after your first purchase. </p>",
+            "page": ""
+          }
+        },
+        "template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I change or cancel my subscription?",
+            "icon": "check_mark",
+            "row_content": "<p>Easy! Login to our subscriotion portal and hit the cancel button! You can also email us to have it cancelled manually. </p>",
+            "page": ""
+          }
+        },
+        "template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your refund or return policy for subscription products?",
+            "icon": "check_mark",
+            "row_content": "<p>Our refund and return policy is the same for one time & subscription orders.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-0",
+        "template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-1",
+        "template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-2",
+        "template--17545300050197__c15c81c2-3570-42b4-8a68-5b0b39bb01b5-16742631574386377e-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Subscriptions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": { "heading": "Subscribe for updates", "heading_size": "h1" }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email-form": { "type": "email_form", "settings": {} }
+      },
+      "block_order": ["heading", "paragraph", "email-form"],
+      "settings": {
+        "color_scheme": "inverse",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b1c674ae-c4fa-485f-aee3-b92d8e8e582b",
+    "8724cf0d-d685-46fb-ad15-d4c8de9f2d42",
+    "86fc78cf-1d4c-4c41-9275-b20e0c380df4",
+    "c15c81c2-3570-42b4-8a68-5b0b39bb01b5",
+    "newsletter"
+  ]
+}

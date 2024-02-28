@@ -1,0 +1,20 @@
+<div class="mb-6 w-full px-3 sm:w-1/2 lg:mb-0 lg:w-1/4">
+  <div class="bg-white">
+    <div class="w-12">
+      {% if column.icon %}
+        {% render 'product-media', media: column.icon %}
+
+      {% else %}
+        <img
+          src="https://cdn.shopify.com/s/files/1/0667/4248/5269/files/plant-icon.png?v=1709058708"
+          alt="{{ column.title }}"
+          class="w-full"
+        >
+      {% endif %}
+    </div>
+    <h3 class="mb-3 text-xl font-semibold text-bp-heading">{{ column.title }}</h3>
+    <p>
+      {{ column.paragraph }}
+    </p>
+  </div>
+</div>

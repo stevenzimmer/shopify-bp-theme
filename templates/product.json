@@ -51,14 +51,12 @@
       },
       "block_order": [
         "title",
-        "049be6dd-7f6b-471f-9471-da496a23aed7",
-        "078a95ed-d75f-4fd7-9f29-38b63d314add",
         "price",
         "54d08e0b-6177-460e-9628-75f46c679500",
-        "description",
         "quantity_selector",
         "variant_picker",
         "buy_buttons",
+        "description",
         "2ce5f444-dea0-4321-b218-b400706a00fc",
         "5143bc48-0757-4d6f-be7d-bfb9649b92e2",
         "ffd57895-17f9-4d16-ae00-b101a731bace"
@@ -72,7 +70,7 @@
         "hide_variants": true,
         "enable_video_looping": true,
         "padding_top": 60,
-        "padding_bottom": 0
+        "padding_bottom": 60
       }
     },
     "collapsible-content": {

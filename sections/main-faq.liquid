@@ -1,0 +1,60 @@
+<div class="container">
+  {% for block in section.blocks %}
+    {% comment %} {{ block.type }} {% endcomment %}
+    {% case block.type %}
+      {% when 'title' %}
+        <h2 class="mb-6 text-center text-4xl font-semibold">
+          {{ block.settings.title }}
+        </h2>
+      {% when 'faq' %}
+        <div class="mb-6 rounded-lg bg-slate-100 p-6">
+          <h3 class="mb-4 text-xl font-semibold">{{ block.settings.question }}</h3>
+          <div class="text-gray-600">{{ block.settings.answer }}</div>
+        </div>
+    {% endcase %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Main FAQ",
+  "tag": "section",
+  "class": "bg-white py-12",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "Title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

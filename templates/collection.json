@@ -1,1 +1,50 @@
-{"sections":{"slideshow":{"type":"slideshow","blocks":{"slide":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/web-a4-Boost_Patches_r1_0201.jpg","image_mobile":"shopify:\/\/shop_images\/web-a1-Boost_Patches_r1_0084.jpg","heading":"Boost Wearable Patches","heading_size":"h0","subheading":"Designed to Boost your energy, sleep, recovery, pain relief, immunity, calm and vibe.","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-left","show_text_box":false,"text_alignment":"left","image_overlay_opacity":30,"color_scheme":"background-1","text_alignment_mobile":"center"}}},"block_order":["slide"],"settings":{"layout":"full_bleed","slide_height":"adapt_image","slider_visual":"counter","auto_rotate":false,"change_slides_speed":5,"show_text_below":true,"accessibility_info":""}},"banner":{"type":"main-collection-banner","disabled":true,"settings":{"show_collection_description":true,"show_collection_image":false,"color_scheme":"background-1"}},"product-grid":{"type":"main-collection-product-grid","settings":{"products_per_page":24,"columns_desktop":4,"image_ratio":"portrait","show_secondary_image":false,"show_vendor":false,"show_rating":false,"enable_quick_add":false,"enable_filtering":false,"filter_type":"horizontal","enable_sorting":false,"columns_mobile":"2","padding_top":60,"padding_bottom":60}},"newsletter":{"type":"newsletter","disabled":true,"blocks":{"heading":{"type":"heading","settings":{"heading":"Subscribe to our emails","heading_size":"h1"}},"paragraph":{"type":"paragraph","settings":{"text":"<p>Be the first to know about new collections and exclusive offers.<\/p>"}},"email-form":{"type":"email_form","settings":{}}},"block_order":["heading","paragraph","email-form"],"settings":{"color_scheme":"accent-2","full_width":true,"padding_top":60,"padding_bottom":0}}},"order":["slideshow","banner","product-grid","newsletter"]}
+{
+  "name": "Collections",
+  "layout": "theme.new",
+  "wrapper": "section.pt-6.bg-bp-grey-2",
+  "sections": {
+    "template": {
+      "type": "template-collection"
+    },
+    "columns": {
+      "type": "columns",
+      "settings": {
+        "title": "Backed by Plant-Based Science",
+        "cta_link": "/pages/how-it-works",
+        "cta_text": "Learn how it works"
+      },
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Clean Wellness",
+            "paragraph": "Natural health patches are infused with natural, plant-based nutraceuticals and vitamins that are released to boost your energy, mood, and recovery, naturally."
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Fast Acting",
+            "paragraph": "Upon application, natural ingredients are absorbed directly by your skin and bypass the digestive system for quicker action and effectiveness."
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Controlled Release",
+            "paragraph": "Say goodbye to choking down pills, powders and unnatural energy drinks with nutraceutical skin patches that work steadily throughout the day and night."
+          }
+        },
+        "column4": {
+          "type": "column",
+          "settings": {
+            "title": "Made in the USA",
+            "paragraph": "Boost Patches are formulated and manufactured safely in an FDA registered facility in the USA."
+          }
+        }
+      },
+      "block_order": ["column1", "column2", "column3", "column4"]
+    }
+  },
+  "order": ["template", "columns"]
+}

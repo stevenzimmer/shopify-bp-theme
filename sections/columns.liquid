@@ -1,56 +1,85 @@
 <section class="bg-white py-16">
   <div class="container">
-    <h2 class="text-center font-fraunces text-5xl text-bp-teal-dark mb-12">Benefits Backed by Science</h2>
-    <div class="flex justify-center mb-12">
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-3">
-        <div class="bg-white">
+    <h2 class="mb-12 text-center font-fraunces text-5xl text-bp-teal-dark">
+      {{ section.settings.title }}
+    </h2>
 
-          <h3 class="text-xl mb-3 font-semibold text-bp-primary">
-            Clean Wellness
-          </h3>
-          <p>Natural health patches are infused with natural, plant-based nutraceuticals and vitamins that are released to boost your energy, mood, and recovery, naturally.</p>
-        </div>
-      </div>
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-3">
-        <div class="bg-white">
-          <h3 class="text-xl mb-3 font-semibold text-bp-primary">
-            Fast Acting
-          </h3>
-          <p>Upon application, natural ingredients are absorbed directly by your skin and bypass the digestive system for quicker action and effectiveness.</p>
-        </div>
-      </div>
-
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-3">
-        <div class="bg-white">
-          <h3 class="text-xl mb-3 font-semibold text-bp-primary">
-            Controlled Release
-          </h3>
-          <p>Say goodbye to choking down pills, powders and unnatural energy drinks with nutraceutical skin patches that work steadily throughout the day and night.</p>
-        </div>
-      </div>
-
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-3">
-        <div class="bg-white">
-          <h3 class="text-xl mb-3 font-semibold text-bp-primary">
-            Made in the USA
-          </h3>
-          <p>Boost Patches are formulated and manufactured safely in an FDA registered facility in the USA.</p>
-        </div>
-      </div>
+    <div class="mb-12 flex flex-wrap justify-center">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'column' %}
+            {% render 'column', column: block.settings %}
+        {% endcase %}
+      {% endfor %}
     </div>
+
     <div class="flex justify-center">
       <div class="text-center">
-        <a href="#" class="flex items-center group">
-            
-            <p class=" font-semibold text-bp-primary m-0" >Learn how it works</p>
-            <div class="px-1">
-              <svg class="group-hover:translate-x-0.5 transition-transform duration-200" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 4.5L10 8.5L6 12.5" stroke="#F07961" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                </svg>
-                
-            </div>
-          </a>
+        <a href="{{ section.settings.cta_link }}" class="group flex items-center">
+          <p class=" m-0 font-semibold text-bp-heading">{{ section.settings.cta_text }}</p>
+          <div class="px-1">
+            <svg
+              class="transition-transform duration-200 group-hover:translate-x-0.5"
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M6 4.5L10 8.5L6 12.5" stroke="#F07961" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </a>
       </div>
     </div>
   </div>
 </section>
+
+{% schema %}
+{
+  "name": "Columns",
+  "tag": "section",
+  "class": "bg-white py-12",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA Link"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "paragraph",
+          "label": "Paragraph"
+        }
+      ],
+      "limit": 4
+    }
+  ]
+}
+{% endschema %}

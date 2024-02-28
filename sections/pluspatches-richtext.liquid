@@ -1,5 +1,15 @@
-<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'section-rich-text.css' | asset_url }}" media="print" onload="this.media='all'">
+<link
+  rel="stylesheet"
+  href="{{ 'component-rte.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+>
+<link
+  rel="stylesheet"
+  href="{{ 'section-rich-text.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+>
 
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
@@ -25,11 +35,17 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
-              <h2 class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+              <h2
+                class="rich-text__heading rte {{ block.settings.heading_size }}"
+                {{ block.shopify_attributes }}
+              >
                 {{ block.settings.heading | replace: 'p>', 'span>' }}
               </h2>
             {%- when 'caption' -%}
-              <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
+              <p
+                class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}"
+                {{ block.shopify_attributes }}
+              >
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'text' -%}
@@ -37,12 +53,33 @@
                 {{ block.settings.text }}
               </div>
             {%- when 'button' -%}
-              <div class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
+              <div
+                class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}"
+                {{ block.shopify_attributes }}
+              >
                 {%- if block.settings.button_label != blank -%}
-                  <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label | escape }}</a>
+                  <a
+                    {% if block.settings.button_link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link }}"
+                    {% endif %}
+                    class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                  >
+                    {{- block.settings.button_label | escape -}}
+                  </a>
                 {%- endif -%}
                 {%- if block.settings.button_label_2 != blank -%}
-                  <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
+                  <a
+                    {% if block.settings.button_link_2 == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link_2 }}"
+                    {% endif %}
+                    class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                  >
+                    {{- block.settings.button_label_2 | escape -}}
+                  </a>
                 {%- endif -%}
               </div>
           {%- endcase -%}
@@ -52,34 +89,31 @@
   </div>
 </div>
 <style>
-.pluspatches-richtext .rich-text__heading{
+  .pluspatches-richtext .rich-text__heading {
     color: #323232;
-    font-family: Gill;
     font-size: 42px;
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
-}
-.pluspatches-richtext .rich-text__text{
+  }
+  .pluspatches-richtext .rich-text__text {
     color: #323232;
     text-align: center;
-    font-family: Assistant;
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-}
-@media (max-width: 1024px){
- .pluspatches-richtext .rich-text__blocks {
-   max-width: 100%;
- }
-}
-  @media (max-width: 767px){
- .pluspatches-richtext .rich-text__heading {
-   font-size: 35px;
- }
-}
-  
+  }
+  @media (max-width: 1024px) {
+    .pluspatches-richtext .rich-text__blocks {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    .pluspatches-richtext .rich-text__heading {
+      font-size: 35px;
+    }
+  }
 </style>
 {% schema %}
 {

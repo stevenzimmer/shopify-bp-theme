@@ -1,26 +1,68 @@
-<div class="relative group">
-  <div class="relative rounded-lg bg-white p-6 group-hover:shadow transition-all duration-200 group-hover:-translate-y-0.5">
+<div class="swiper-card swiper-slide group relative overflow-hidden rounded-lg border-2 border-transparent hover:border-bp-teal-dark hover:bg-white">
+  <a href="{{ product.url | within: collection }}" class="absolute inset-0 z-20 h-full w-full"
+    >&nbsp;</a
+  >
+  <div class="relative  rounded-lg bg-white py-3">
     {% if product.featured_image %}
-
-      <img class="group-hover:opacity-80 transition-opacity duration-200" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}" src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
-
+      <img
+        width="{{ product.featured_image.width }}"
+        height="{{ product.featured_image.height }}"
+        src="{{ product.featured_image.src | img_url: 'large' }}"
+        alt="{{ product.featured_image.alt | escape }}"
+      >
 
     {% else %}
-        {{ "product-1" |  placeholder_svg_tag: "w-full h-full object-cover" }}
+      {{ 'product-1' | placeholder_svg_tag: 'w-full h-full object-cover' }}
     {% endif %}
-    
-    <a href="{{ product.url | within: collection }}" class="absolute inset-0 flex h-full w-full items-center justify-center opacity-0 group-hover:opacity-100">
+
+    <a
+      href="{{ product.url | within: collection }}"
+      class="absolute inset-0 flex h-full w-full items-center justify-center opacity-0 group-hover:opacity-100"
+    >
+      {% if product.price < product.compare_at_price %}
+        <div class="absolute left-3 top-3">
+          <div class="h-full w-full bg-bp-teal-dark px-2 py-1 text-sm font-semibold text-white">
+            Sale
+          </div>
+        </div>
+      {% endif %}
       <span
-        class="btn btn-sm border-bp-teal-dark bg-bp-teal-dark text-white"
-        >View Options</span
-      >
+        class="btn btn-sm flex items-center border-bp-teal-dark bg-bp-teal-dark text-white"
+        >View Options &nbsp;&nbsp;
+        <svg
+          width="17"
+          height="17"
+          viewBox="0 0 17 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M6.83008 4.7168L10.8301 8.7168L6.83008 12.7168" stroke="#4AA471" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+        </svg>
+      </span>
     </a>
   </div>
-  <div class="p-3">
-    <h3 class="mb-3 text-xl font-semibold" >
+  <div class="p-6">
+    <h3 class="mb-3 text-xl font-semibold text-bp-heading">
       {{ product.title }}
     </h3>
-    <p>{{ product.description | strip_html }}</p>
 
+    <p>{{ product.description | strip_html }}</p>
+    {% comment %}
+      <a href="{{ product.url }}" class="md:bp-hidden group flex items-center py-3">
+        <p class=" m-0 font-semibold text-bp-heading">View options</p>
+        <div class="px-1">
+          <svg
+            class="transition-transform duration-200 group-hover:translate-x-0.5"
+            width="16"
+            height="17"
+            viewBox="0 0 16 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M6 4.5L10 8.5L6 12.5" stroke="#F07961" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </a>
+    {% endcomment %}
   </div>
 </div>

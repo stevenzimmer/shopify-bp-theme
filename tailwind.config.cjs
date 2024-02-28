@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.liquid', './frontend/**/*.{js,ts,jsx,tsx}'],
+  content: ['./**/*.{liquid,json}', './frontend/**/*.js'],
   theme: {
     extend: {
       container: {
@@ -19,12 +19,12 @@ module.exports = {
       },
       colors: {
         bp: {
-          primary: '#2E2A39',
+          heading: '#2E2A39',
           body: '#625F6B',
           lavender: '#DABDFF',
           green: '#4AA471',
           orange: '#F07961',
-          yelloy: '#FFD174',
+          yellow: '#FFD174',
           'blue-light': '#B8DDE5',
           'blue-dark': '#152430',
           'teal-light': '#5FB9B3',

@@ -7,7 +7,10 @@
           {% render 'logo-boostpatches' %}
         </a>
       </div>
-      <div class="absolute  left-0 top-20 hidden w-full flex-col justify-between bg-bp-grey-2 px-6 py-12 lg:relative  lg:top-0 lg:flex lg:flex-row lg:items-center lg:p-0">
+      <div
+        class="bp-hidden absolute left-0 top-20 z-10 w-full flex-col justify-between bg-bp-grey-2 px-6 py-12 lg:relative lg:top-0 lg:flex lg:flex-row lg:items-center lg:p-0"
+        id="nav-main"
+      >
         <div class="mb-6 flex w-full flex-col lg:mb-0 lg:flex-row lg:items-center lg:justify-center">
           {% for link in main_menu_linklist %}
             <a
@@ -20,7 +23,10 @@
         </div>
         <div class="">
           {% if shop.customer_accounts_enabled %}
-            <a href="{{ section.settings.btn_url }}" class=" btn border-bp-orange ">
+            <a
+              href="{{ section.settings.btn_url }}"
+              class=" btn border-bp-orange hover:bg-bp-orange"
+            >
               {{- section.settings.btn_text }}
               <svg
                 class="inline"
@@ -36,8 +42,17 @@
           {% endif %}
         </div>
       </div>
-      <div class="lg:hidden">
-        {% render 'icon-hamburger' %}
+      {% comment %}  {% endcomment %}
+      <div
+        class="flex w-12 cursor-pointer items-center justify-center px-3 lg:hidden"
+        id="mobile-nav-trigger"
+      >
+        <div class="hamburger w-full">
+          {% render 'icon-hamburger' %}
+        </div>
+        <div class="close bp-hidden w-full">
+          {% render 'icon-close' %}
+        </div>
       </div>
     </div>
   </div>
@@ -51,7 +66,6 @@
       "type": "link_list",
       "id": "main-nav",
       "label": "Main menu",
-      "default": "main-menu",
       "info": "Add the links for the main menu"
     },
     {

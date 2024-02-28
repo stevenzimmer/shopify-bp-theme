@@ -15,37 +15,58 @@
 {%- endstyle -%}
 
 <div class="image-with-text image-with-text--{{ section.settings.content_layout }} page-width isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
-  <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
+  <div class="image-with-text__grid grid--gapless grid--1-col grid grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
     <div class="image-with-text__text-item grid__item">
-      <div id="ImageWithText--{{ section.id }}" class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container">
+      <div
+        id="ImageWithText--{{ section.id }}"
+        class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} content-container"
+      >
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
-              <h2 class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+              <h2
+                class="image-with-text__heading {{ block.settings.heading_size }}"
+                {{ block.shopify_attributes }}
+              >
                 {{ block.settings.heading | escape }}
               </h2>
             {%- when 'caption' -%}
-              <p class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.caption | escape }}</p>
+              <p
+                class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.caption | escape }}
+              </p>
             {%- when 'text' -%}
-              <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-            
+              <div
+                class="image-with-text__text rte {{ block.settings.text_style }}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.text }}
+              </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
     </div>
     <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
-      
-        {%- for block in section.blocks -%}
-          {% case block.type %}
-            {%- when 'button' -%}
-              {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
-                  {{ block.settings.button_label | escape }}
-                </a>
-              {%- endif -%}
-          {%- endcase -%}
-        {%- endfor -%}
-
+      {%- for block in section.blocks -%}
+        {% case block.type %}
+          {%- when 'button' -%}
+            {%- if block.settings.button_label != blank -%}
+              <a
+                {% if block.settings.button_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ block.settings.button_link }}"
+                {% endif %}
+                class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.button_label | escape }}
+              </a>
+            {%- endif -%}
+        {%- endcase -%}
+      {%- endfor -%}
     </div>
   </div>
 </div>
@@ -87,7 +108,6 @@
   }
   #ImageWithText--{{ section.id }} .image-with-text__heading{
     color: #FFF;
-    font-family: 'Gill';
     font-size: 42px;
     font-style: normal;
     font-weight: 500;
@@ -99,14 +119,12 @@
   }
   #shopify-section-{{ section.id }} .image-with-text__content{
       color: #FFF;
-      font-family: 'Assistant';
       font-size: 17px;
       font-style: normal;
       font-weight: 400;
       line-height: 29px;
   }
   #shopify-section-{{ section.id }} .button{
-    font-family: 'Gill';
     font-weight: 700;
     font-size: 16px;
     line-height: normal;
@@ -118,7 +136,7 @@
   }
   #shopify-section-{{ section.id }} .button:before,
   #shopify-section-{{ section.id }} .button:after{
-   display: none; 
+   display: none;
   }
   @media (max-width: 1024px){
     #shopify-section-{{ section.id }}{
@@ -134,7 +152,7 @@
   }
     @media (max-width: 870px){
         #ImageWithText--{{ section.id }}{
-        padding: 20px 10px;; 
+        padding: 20px 10px;;
     }
     }
    @media (max-width: 767px){
@@ -142,7 +160,7 @@
         border-radius: 10px;
     }
     #shopify-section-{{ section.id }} .image-with-text__grid{
-      justify-content: center;    
+      justify-content: center;
     }
     #shopify-section-{{ section.id }} .image-with-text__media-item{
       align-items: center;
@@ -151,7 +169,6 @@
       text-align: center;
     }
 </style>
-
 
 {% schema %}
 {

@@ -19,10 +19,53 @@
       }
     },
     "columns": {
-      "type": "columns"
+      "type": "columns",
+      "settings": {
+        "title": "Benefits Backed by Science",
+        "cta_link": "/pages/how-it-works",
+        "cta_text": "Learn how it works"
+      },
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Clean Wellness",
+            "paragraph": "Natural health patches are infused with natural, plant-based nutraceuticals and vitamins that are released to boost your energy, mood, and recovery, naturally."
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Fast Acting",
+            "paragraph": "Upon application, natural ingredients are absorbed directly by your skin and bypass the digestive system for quicker action and effectiveness."
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Controlled Release",
+            "paragraph": "Say goodbye to choking down pills, powders and unnatural energy drinks with nutraceutical skin patches that work steadily throughout the day and night."
+          }
+        },
+        "column4": {
+          "type": "column",
+          "settings": {
+            "title": "Made in the USA",
+            "paragraph": "Boost Patches are formulated and manufactured safely in an FDA registered facility in the USA."
+          }
+        }
+      },
+      "block_order": ["column1", "column2", "column3", "column4"]
     },
     "boost-your-mood": {
-      "type": "boost-your-mood"
+      "type": "boost-your-mood",
+      "settings": {
+        "label": "NEW!",
+        "heading": "Boost Your Mood",
+        "paragraph": "Boost your vibe with a wearable patch infused with natural hemp and aloe extract.",
+        "cta_link": "/products/boostyourvibe",
+        "cta_text": "Try the Vibe Patch Yourself"
+      }
     },
     "quotes": {
       "type": "quotes"
