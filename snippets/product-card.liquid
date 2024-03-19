@@ -15,8 +15,7 @@
       {{ 'product-1' | placeholder_svg_tag: 'w-full h-full object-cover' }}
     {% endif %}
 
-    <a
-      href="{{ product.url | within: collection }}"
+    <div
       class="absolute inset-0 flex h-full w-full items-center justify-center opacity-0 group-hover:opacity-100"
     >
       {% if product.price < product.compare_at_price %}
@@ -39,10 +38,10 @@
           <path d="M6.83008 4.7168L10.8301 8.7168L6.83008 12.7168" stroke="#4AA471" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
         </svg>
       </span>
-    </a>
+    </div>
   </div>
   <div class="p-6">
-    <h3 class="mb-3 text-xl font-semibold text-bp-heading">
+    <h3 class="mb-3 text-xl font-semibold  text-bp-heading">
       {{ product.title }}
     </h3>
 

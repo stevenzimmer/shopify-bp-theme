@@ -107,7 +107,7 @@
 }
 
 .image-with-text .image-with-text__media-item > * {
-  border-radius: var(--media-radius);
+  /* border-radius: var(--media-radius); */
   overflow: hidden;
   box-shadow: var(--media-shadow-horizontal-offset)
     var(--media-shadow-vertical-offset)
@@ -120,7 +120,7 @@
 }
 
 .image-with-text .image-with-text__text-item > * {
-  border-radius: var(--text-boxes-radius);
+  /* border-radius: var(--text-boxes-radius); */
   overflow: hidden;
   box-shadow: var(--text-boxes-shadow-horizontal-offset)
     var(--text-boxes-shadow-vertical-offset)

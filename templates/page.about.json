@@ -1,100 +1,11 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": { "padding_top": 36, "padding_bottom": 28 }
-    },
-    "21f0c95f-2de1-4124-8034-bfc49fa85316": {
-      "type": "image-banner",
-      "blocks": {
-        "template--17545300017429__21f0c95f-2de1-4124-8034-bfc49fa85316-1674266303e8cad362-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": { "heading": "", "heading_size": "h1" }
-        },
-        "template--17545300017429__21f0c95f-2de1-4124-8034-bfc49fa85316-1674266303e8cad362-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--17545300017429__21f0c95f-2de1-4124-8034-bfc49fa85316-1674266303e8cad362-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--17545300017429__21f0c95f-2de1-4124-8034-bfc49fa85316-1674266303e8cad362-0",
-        "template--17545300017429__21f0c95f-2de1-4124-8034-bfc49fa85316-1674266303e8cad362-1",
-        "template--17545300017429__21f0c95f-2de1-4124-8034-bfc49fa85316-1674266303e8cad362-2"
-      ],
+    "page-hero": {
+      "type": "page-hero",
       "settings": {
-        "image": "shopify://shop_images/people_on_hill.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "f28370e2-b3dd-4ac0-8334-b230c7f2d119": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17545300017429__f28370e2-b3dd-4ac0-8334-b230c7f2d119-16742664105f1db48b-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Work Harder. Play Harder. Rest Better. Recover Faster.</p>",
-            "heading_size": "h0"
-          }
-        },
-        "template--17545300017429__f28370e2-b3dd-4ac0-8334-b230c7f2d119-16742664105f1db48b-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Our mission is to make your day better. We get it. We like to squeeze the most out of every day and we want to help you live your best life too. Whether you’re working hard or working out, a night owl or and early bird, staying focused or staying Zen, Boost Patches give your that little extra something. We want you to give yourself a boost into better health, fitness, and mindfulness.</p>"
-          }
-        },
-        "template--17545300017429__f28370e2-b3dd-4ac0-8334-b230c7f2d119-16742664105f1db48b-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--17545300017429__f28370e2-b3dd-4ac0-8334-b230c7f2d119-16742664105f1db48b-0",
-        "template--17545300017429__f28370e2-b3dd-4ac0-8334-b230c7f2d119-16742664105f1db48b-1",
-        "template--17545300017429__f28370e2-b3dd-4ac0-8334-b230c7f2d119-16742664105f1db48b-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "label": "Our Story",
+        "h1": "Work Harder. Play Harder. Rest Better. Recover Faster.",
+        "background_image": "shopify://shop_images/hero.png"
       }
     },
     "7adbd06f-a6c0-432b-91dc-c72b2bbe1bb6": {
@@ -123,7 +34,7 @@
         "template--17545300017429__7adbd06f-a6c0-432b-91dc-c72b2bbe1bb6-16742668266e4e5baf-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/web-a5-Boost_Patches_r1__0217.jpg",
+        "image": "shopify://shop_images/story-mission.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -132,7 +43,7 @@
         "content_layout": "no-overlap",
         "color_scheme": "accent-1",
         "mobile_content_alignment": "left",
-        "padding_top": 0,
+        "padding_top": 100,
         "padding_bottom": 36
       }
     },
@@ -162,7 +73,7 @@
         "template--17545300017429__40019127-3193-4537-8d25-41868b38de52-16742668266e4e5baf-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/boost-patches-our-story.jpg",
+        "image": "shopify://shop_images/story-about.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -171,7 +82,7 @@
         "content_layout": "no-overlap",
         "color_scheme": "accent-1",
         "mobile_content_alignment": "left",
-        "padding_top": 0,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -185,7 +96,7 @@
         "template--17545300017429__b520cd19-aa86-4c67-9cc0-56c360b38a97-1675397897956f5405-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We are a husband-and-wife team who are running a very successful medical adhesive company. After twenty years of engineering adhesive applications for our clients we came across an adhesive system that was so compelling that we started a brand-new business just focused on topical adhesive patches. And here we are with Boost Patches! Being able to infuse vitamins and nutrceuticals into peel-and-stick patches is the magic behind our Boost Patches.  Our background in adhesives, manufacturing medical grade stick-to-skin tape, provided the foundation to develop our Boost Patches.  Our founders also have a background in marketing, and a houseful of very active boys. The marriage of the two minds is what created our highly effective Boost Patches that will give your day a Boost for whatever mood you are in.     </p>",
+            "text": "<p>We are a husband-and-wife team who are running a very successful medical adhesive company. After twenty years of engineering adhesive applications for our clients we came across an adhesive system that was so compelling that we started a brand-new business just focused on topical adhesive patches. And here we are with Boost Patches!</p><p>Being able to infuse vitamins and nutrceuticals into peel-and-stick patches is the magic behind our Boost Patches.Our background in adhesives, manufacturing medical grade stick-to-skin tape, provided the foundation to develop our Boost Patches.</p><p>Our founders also have a background in marketing, and a houseful of very active boys. The marriage of the two minds is what created our highly effective Boost Patches that will give your day a Boost for whatever mood you are in.</p>",
             "text_style": "body"
           }
         },
@@ -201,14 +112,14 @@
         "template--17545300017429__b520cd19-aa86-4c67-9cc0-56c360b38a97-1675397897956f5405-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/D_J.jpg",
+        "image": "shopify://shop_images/story-founders.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "accent-1",
+        "color_scheme": "bg-white",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
@@ -245,9 +156,7 @@
     }
   },
   "order": [
-    "main",
-    "21f0c95f-2de1-4124-8034-bfc49fa85316",
-    "f28370e2-b3dd-4ac0-8334-b230c7f2d119",
+    "page-hero",
     "7adbd06f-a6c0-432b-91dc-c72b2bbe1bb6",
     "40019127-3193-4537-8d25-41868b38de52",
     "b520cd19-aa86-4c67-9cc0-56c360b38a97",
