@@ -51,7 +51,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "How do I apply a topical patch?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>First, clean and dry the area where the patch will be applied. Then, peel one patch from its liner and apply it to the skin, rubbing the patch down evenly to ensure good contact.</p>",
             "page": ""
           }
@@ -60,7 +60,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "How long does a topical patch last?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>The duration of a topical patch's effectiveness will vary depending on the specific medication and the instructions provided.</p>",
             "page": ""
           }
@@ -69,7 +69,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Can I shower or swim with a topical patch on?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Our patches are not intended to be submerged in water or be in  constant contact with water (like a shower). For best results the user should not use the patches when in constant contact with water.</p>",
             "page": ""
           }
@@ -78,7 +78,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "What is your money back guarantee?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>We guarantee you will love it or your money back. This offer is valid for your first order only. To use this offer, simply <a href=\"/pages/contact\" target=\"_blank\" title=\"Contact\">contact us</a>.</p>",
             "page": ""
           }
@@ -112,7 +112,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Do you offer free shipping?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Yes, we offer free shippign on all orders over $25</p>",
             "page": ""
           }
@@ -121,7 +121,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Do you offer expedited shipping",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Yes, we have both UPS and USPS options available at checkout. </p>",
             "page": ""
           }
@@ -130,7 +130,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "How long will it take to get my order?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Orders are shipped within 1-3 business days. Please add this time to your shipment method to get the total time to recieve your order. </p>",
             "page": ""
           }
@@ -139,7 +139,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "What if I dont like the patches?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.</p>",
             "page": ""
           }
@@ -173,7 +173,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "How does the subscription service work?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>When you purchase Boost Patches you have the option to subscribe to the product and choose delivery every 30,60 or 90 days. Based on your selection we will create a new order every 30,0 or 90 days and ship your patches. You do not need to do anything, it is 100% on autopilot. </p>",
             "page": ""
           }
@@ -182,7 +182,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Can I customize my subscription?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Yes! You can change the frequency for each patch type either when you first purchase or in the subscrition portal after your first purchase. </p>",
             "page": ""
           }
@@ -191,7 +191,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "How do I change or cancel my subscription?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Easy! Login to our subscriotion portal and hit the cancel button! You can also email us to have it cancelled manually. </p>",
             "page": ""
           }
@@ -200,7 +200,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "What is your refund or return policy for subscription products?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Our refund and return policy is the same for one time & subscription orders.</p>",
             "page": ""
           }
