@@ -14,7 +14,7 @@
     "dev": "concurrently --raw --kill-others --passthrough-arguments \"npm run shopify:dev {@}\" \"npm run vite:dev\"",
     "shopify:dev": "shopify theme dev",
     "vite:dev": "vite",
-    "deploy": "pnpm run build && pnpm run shopify:push",
+    "deploy": "npm run build && npm run shopify:push",
     "shopify:push": "shopify theme push",
     "build": "vite build",
     "format": "prettier --write --cache .",
